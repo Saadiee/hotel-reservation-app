@@ -4,8 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 
 const App = () => {
-
-  const isOwner = useLocation().pathname.includes("owner")
+  const isOwner = useLocation().pathname.includes("owner");
   return (
     <div>
       {!isOwner && <Navbar />}
